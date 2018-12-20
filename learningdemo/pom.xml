@@ -50,6 +50,9 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- slf4j + LogBack——spring boot默认引入相关jar包的 -->
+
+
     </dependencies>
 
     <build>
