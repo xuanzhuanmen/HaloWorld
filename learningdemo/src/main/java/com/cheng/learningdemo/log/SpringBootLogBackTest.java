@@ -8,5 +8,7 @@ public class SpringBootLogBackTest {
 
     public static void main(String[] args) {
         logger.info("logback success!");
+        String a = "haha";
+        logger.info("test how to reset in git {}", a);
     }
 }
