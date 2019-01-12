@@ -19,7 +19,7 @@ public class NullTest {
         Employee employee = new Employee();
         employee.setId(1);
         employee.setName("cheng");
-        // System.out.println(employee.getDuty());//会报空指针
+        System.out.println(employee.getDuty().getContent());//会报空指针
         if(null != employee.getDuty()) {
             System.out.println(employee.getDuty().getContent());
         }else {
