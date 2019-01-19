@@ -17,4 +17,20 @@ public class ShapeFactory {
         }
         return shape;
     }
+
+    /**
+     * 采用枚举的方式
+     */
+    public static Shape getShape(ShapeType shapeType) {
+        switch(shapeType) {
+            case CIRCLE:
+                return new Circle();
+            case SQUARE:
+                return new Square();
+            case RECTANGLE:
+                return new Rectangle();
+        }
+        return null;
+    }
+
 }
