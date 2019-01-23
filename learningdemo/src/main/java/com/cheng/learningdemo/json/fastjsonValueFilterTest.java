@@ -17,8 +17,9 @@ public class fastjsonValueFilterTest {
     public static ValueFilter filter = new ValueFilter() {
         @Override
         public Object process(Object obj, String s, Object v) {
-            if (v == null)
+            if (v == null) {
                 return "";
+            }
             return v;
         }
     };

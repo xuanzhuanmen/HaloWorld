@@ -50,7 +50,7 @@ public class Worker2 {
     private static void doWork(String task) {
         try {
             Thread.sleep(1000); // 暂停1秒钟
-        } catch (InterruptedException _ignored) {
+        } catch (InterruptedException exception) {
             Thread.currentThread().interrupt();
         }
     }

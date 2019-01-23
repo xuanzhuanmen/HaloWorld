@@ -14,8 +14,8 @@ public class CompareDateTest {
             Date a2 = sdf.parse("2018-12-02");
             Date b2 = sdf.parse("2018-12-12");
             Long k = a1.getTime();
-            String date_string = sdf.format(new Date(k * 1000L));
-            System.out.println(date_string);
+            String dateString = sdf.format(new Date(k * 1000L));
+            System.out.println(dateString);
             System.out.println(k);
         } catch (ParseException e) {
             e.printStackTrace();

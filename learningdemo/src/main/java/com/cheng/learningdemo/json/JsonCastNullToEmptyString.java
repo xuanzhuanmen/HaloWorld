@@ -17,13 +17,14 @@ public class JsonCastNullToEmptyString {
     private static ValueFilter filter = new ValueFilter() {
         @Override
         public Object process(Object obj, String s, Object v) {
-            if (v == null)
+            if (v == null) {
                 return "";
+            }
             return v;
         }
     };
 
-    private static void test() {
+    private void test() {
         Student student = new Student();
         student.setAge(11);
         student.setGf(null);
