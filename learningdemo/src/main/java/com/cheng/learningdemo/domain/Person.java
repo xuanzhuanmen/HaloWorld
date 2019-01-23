@@ -6,7 +6,15 @@ public class Person {
     /*@JSONField(name = "realName")*/
     private String name;
     private int age;
+    private String mobile;
 
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
     public String getName() {
         return name;
     }
