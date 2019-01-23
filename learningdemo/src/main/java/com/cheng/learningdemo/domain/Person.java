@@ -2,11 +2,23 @@ package com.cheng.learningdemo.domain;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable {
     /*@JSONField(name = "realName")*/
     private String name;
     private int age;
     private String mobile;
+
+    public Person() {
+
+    }
+
+    public Person(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
 
     public String getMobile() {
         return mobile;
