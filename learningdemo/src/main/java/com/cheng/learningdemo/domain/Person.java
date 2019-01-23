@@ -1,6 +1,9 @@
 package com.cheng.learningdemo.domain;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 public class Person {
+    /*@JSONField(name = "realName")*/
     private String name;
     private int age;
 
