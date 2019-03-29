@@ -38,7 +38,9 @@ public class ProfitTest {
 
     public static void main(String[] args) {
         double result = 0;
-        result = ProfitTest.getCapitalResult(6, 20, 1.1, 6);
+        // 投资年限
+        int year = 10;
+        result = ProfitTest.getCapitalResult(6, year, 1.1, 6);
         System.out.println(result);
     }
 }
